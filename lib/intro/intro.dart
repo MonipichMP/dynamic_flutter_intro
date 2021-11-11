@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:launcher/home/home.dart';
+import 'package:launcher/redux/MyTimePage.dart';
 import 'package:lottie/lottie.dart';
 
 class IntroPage extends StatefulWidget {
@@ -34,7 +35,7 @@ class _IntroPageState extends State<IntroPage> with TickerProviderStateMixin {
           (value) => Future.delayed(Duration(seconds: 1)).then(
             (value) => _lottieAnimation.forward().then(
                   (value) => Navigator.of(context)
-                      .pushAndRemoveUntil(MaterialPageRoute(builder: (context) => HomePage()), (route) => false),
+                      .pushAndRemoveUntil(MaterialPageRoute(builder: (context) => MyTimePage()), (route) => false),
                 ),
           ),
         );
