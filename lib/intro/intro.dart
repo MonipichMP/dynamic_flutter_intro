@@ -99,7 +99,7 @@ class _IntroPageState extends State<IntroPage> with TickerProviderStateMixin {
           repeat: false,
           animate: false,
           height: 100,
-          width: 100,
+          width: 80,
           controller: _lottieAnimation,
         )
       ],
